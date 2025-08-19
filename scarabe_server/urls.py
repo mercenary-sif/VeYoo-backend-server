@@ -1,7 +1,7 @@
 
 from django.contrib import admin
 from django.urls import path
-from ..scarabe import views
+from scarabe import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/create-account/', views.CreateAccountAPIView.as_view(), name='create-account'),
