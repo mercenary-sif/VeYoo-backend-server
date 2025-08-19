@@ -82,7 +82,7 @@ DATABASES = {
     }
 }
 DATABASES_URL =os.environ.get("DATABASES_URL")
-DATABASES['default'] = dj_database_url.parse(DATABASES_URL)
+DATABASES['default'] = dj_database_url.parse("postgresql://veyoo_user:FEZI86j9fn3a179OxrJVVrHlOYE09XsU@dpg-d2hr0mje5dus73e2b6sg-a.oregon-postgres.render.com/veyoo")
 # 
 
 # Password validation
